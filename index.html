@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CinePhile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <video autoplay muted loop>
+          <source src="Directed by Christopher Nolan.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+          <h1>CinePhile</h1>
+          <p>🎬Your Cinematic Haven🎬</p>
+        </div>
+      </header>
+
+  <main>
+
+    <!-- Centered Heading -->
+    <h3 class="main-heading">🔝Top Movies by Genre📈</h3>
+    
+    <!-- Centered Container for Dropdown -->
+    <div class="dropdown-container">
+        <select id="genreSelect">
+            <option value="28">Action</option>
+            <option value="53">Thriller</option>
+            <option value="18">Drama</option>
+            <option value="35">Comedy</option>
+            <option value="10749">Romance</option>
+            <option value="14">Fantasy</option>
+            <option value="27">Horror</option>
+            <option value="16">Animation</option>
+        </select>
+    </div>
+    
+    <!-- Carousel Container -->
+    <div class="carousel"></div>
+
+
+    <!-- Centered Heading -->
+    <h3 class="main-heading">🍿Get Movie Recommendations🔍</h3>
+
+    <!-- Search Bar for Recommendations -->
+    <div class="search-container">
+        <input type="text" id="movieSearch" placeholder="Search for a movie...">
+        <div class="search-results"></div>
+        <button id="recommendBtn" style="display:none;">🍿Recommend🍿</button>
+    </div>
+
+    <!-- Recommendations Section -->
+    <div class="recommendations"></div>
+
+  </main>
+</body>
+<script src="script.js"></script>
+
+<footer>
+</footer>
+</html>
